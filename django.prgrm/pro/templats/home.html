@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block body_block %}
+<div class="container">
+    <h1>welcome to home page</h1>
+    {% if user.is_authenticated %}
+    {{user}}
+    {% endif %}
+    {% endblock %}
+</div>
