@@ -1,0 +1,82 @@
+{% extends 'contact.html' %}
+
+{% block body_block %}
+<nav class="navbar navbar2 navbar-expand-lg fixed-top  container ">
+  <a class="navbar-brand text-danger" href="#">DENTO</a>
+  <button class="navbar-toggler custom-toggler border-warning" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon  "></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
+    <ul class="navbar-nav ">
+      <li class="nav-item ">
+        <a class="nav-link text-dark" href="{% url 'base' %}">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="{% url 'about' %}">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="{% url 'service' %}">Service</a>
+      </li>
+      <li class="nav-item ">
+          <a class="nav-link text-dark" href="{% url 'contact' %}">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>
+<br>
+<br>
+<div class="container-fluid n1">
+  <br><br>
+  <h1 style="text-align: center;">services</h1>
+  <br>
+<br>
+<br>
+</div>
+<h4 style="text-align: center;text-transform: capitalize;">we providing best services</h4>
+<div class="container">
+ 
+  <div class="card">
+    <div class="face face1">
+      <div class="content">
+        <span class="stars"></span>
+        <h2 class="java">Diagnostics and emergency treatment</h2>
+        <p class="java">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
+      </div>
+    </div>
+    <div class="face face2">
+      <h2>01</h2>
+    </div>
+  </div>
+
+  <div class="card">
+  
+    <div class="face face1">
+      <div class="content">
+        <span class="stars"></span>
+        <h2 class="python">Home medical appointments</h2>
+        <p class="python">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
+      </div>
+    </div>
+    <div class="face face2">
+      <h2>02</h2>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="face face1">
+      <div class="content">
+        <span class="stars"></span>
+        <h2 class="cSharp">Pharmacy refunded from hospital</h2>
+        <p class="cSharp">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
+      </div>
+    </div>
+    <div class="face face2">
+      <h2>03</h2>
+    </div>
+  </div>
+  
+</div>
+
+
+{% endblock %}   
